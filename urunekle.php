@@ -33,8 +33,19 @@
 	}
 	if ($_POST["ekle"])
 	{
-		
-		
+		if ($_POST["kaydet"])
+	{
+		if($_POST["uadi"]=="" || $_POST["umarkasi"]=="" || $_POST["ufiyati"]=="")
+		{
+			echo"Eksik bilgileri doldurunuz";
+		}
+		else
+		{
+			$dosya=fopen("bilgi.txt","a");
+			$yazilacak=$_POST["uadi"]."-".$_POST["umarkasi"]."-".$_POST["ufiyati"];
+			fputs($dosya,$yazilacak);
+			echo"********Sisteme Kaydiniz Yapilmistir*********";
+		}
 		
 		
 		
