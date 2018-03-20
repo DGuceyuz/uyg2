@@ -11,11 +11,10 @@
 			while (!feof($dosya))
 			{
 				
-				
-				
-				
-				
-				
+				$kaynak=fgets($dosya,256);
+				$kaynak=trim($kaynak);
+				$dizi=explode("-",$kaynak);
+				echo "<option>".$dizi[1];
 			}
 		echo"</select>";	
 		?>
