@@ -11,12 +11,8 @@
 <?php
 	
 	
-	
-	
-	
-	
-	
-	
+	$dosya=fopen("satis.txt","r");
+	while (!feof($dosya))
 	{
 		$kaynak=fgets($dosya,256);
 		$kaynak=trim($kaynak);
