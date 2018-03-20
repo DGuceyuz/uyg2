@@ -13,18 +13,12 @@
 		$kaynak=fgets($dosya,256);
 		$kaynak=trim($kaynak);
 		$dizi=explode("-",$kaynak);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+			echo"<tr> ";
+				echo"<td>".$dizi[0]."</td>";
+				echo"<td>".$dizi[1]."</td>";
+				echo"<td>".$dizi[2]."</td>";
+				echo"<td>";
+			echo"</tr>";
 	}
 	
 ?>
